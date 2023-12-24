@@ -1,5 +1,10 @@
         /* Stili CSS per la calcolatrice */
         /* ... */
+        *,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
         .container {
             font-family: 'Montserrat', sans-serif;
             border: 1px solid #B6BBC4;
