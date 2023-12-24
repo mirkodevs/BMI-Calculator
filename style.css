@@ -1,0 +1,273 @@
+        /* Stili CSS per la calcolatrice */
+        /* ... */
+        .container {
+            font-family: 'Montserrat', sans-serif;
+            border: 1px solid #B6BBC4;
+         
+            max-width: 990px;
+            margin: 200px auto;
+            padding: 20px 15px;
+            border-radius: 7px;
+        }
+
+        .calc fieldset {
+            border: none;
+            padding: 0;
+        }
+
+        .calc fieldset:nth-child(1) {
+            padding: 10px 0;
+
+        }
+
+        .calc-btn {
+            background-color: #596FB7;
+            padding: 10px 5px;
+            border: none;
+            color: white;
+
+        }
+
+        .reset-btn {
+
+            background-color: transparent;
+            color: #596FB7;
+        }
+.reset-btn:hover{
+
+background-color: #596FB7;
+color: white;
+
+}
+
+        .reset-btn,
+        .calc-btn {
+
+            padding: 8px 10px;
+            border-radius: 12px;
+            cursor: pointer;
+            border: 1px solid #596FB7;
+
+        }
+
+        .btn-field {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .calc input[type="number"],
+        #age {
+
+            border: 1px solid #B6BBC4;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: transparent;
+         
+            min-width: 100px;
+        }
+        .input-field{
+
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 1em;
+            flex-wrap: nowrap;
+        }
+        .bmi-result {
+
+            display: flex;
+
+        }
+
+        .bmi-result li {
+            list-style-type: none;
+
+
+        }
+
+        #results {
+            display: none;
+        }
+
+        .vue-gauge ul li p {
+            font-size: 10px;
+        }
+
+        .vue-gauge ul li p::after {
+            background: #c5c6c7;
+            content: "";
+            display: block;
+            height: 4px;
+            left: 0;
+            position: absolute;
+            top: -4px;
+            width: 1px;
+        }
+
+        .vue-gauge ul li p::before {
+            content: "";
+            display: block;
+            height: 5px;
+            margin-bottom: 2px;
+        }
+
+        .vue-gauge ul li:first-child p::before {
+
+            background: #47c8a6;
+
+        }
+
+        .vue-gauge ul li:nth-child(2) p::before {
+
+            background: #4CB9E7;
+
+        }
+
+        .vue-gauge ul li:nth-child(3) p::before {
+
+            background: #38419D;
+
+        }
+
+        .vue-gauge ul li:nth-child(4) p::before {
+
+            background: #756AB6;
+
+        }
+
+        .vue-gauge ul li:nth-child(5) p::before {
+
+            background: #D0A2F7;
+
+        }
+
+        .vue-gauge ul li:nth-child(6) p::before {
+
+            background: #E26EE5;
+
+        }
+
+        .vue-gauge ul li:nth-child(7) p::before {
+
+            background: #E36414;
+
+        }
+
+        .vue-gauge ul {
+            display: table;
+            width: 100%;
+            position: relative;
+            padding: 0;
+
+            box-sizing: border-box;
+        }
+
+        .vue-gauge ul li {
+            color: #8f8f8f;
+            display: table-cell;
+            font-size: 1.2rem;
+            position: relative;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .vue-gauge {
+
+            padding: 32px 0 0;
+            margin: 0;
+            position: relative;
+        }
+
+        .vue-gauge ul li {
+            color: #8f8f8f;
+            display: table-cell;
+            font-size: 1.2rem;
+            position: relative;
+            text-align: center;
+        }
+
+        .vue-gauge ul li span {
+            display: block;
+            left: -10px;
+            position: absolute;
+            text-align: center;
+            top: -22px;
+            width: 30px;
+        }
+
+        .vue-gauge .arrow {
+            display: block;
+            height: 29px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 6px;
+
+        }
+
+        .vue-gauge .arrow::after {
+            background: url("https://calculator.asamaru.net/res/img/bmi/point.png") no-repeat;
+            background-size: auto;
+            background-size: 20px 29px;
+            content: "";
+            display: inline-block;
+            height: 29px;
+            position: absolute;
+            right: -10px;
+            top: 10px;
+            width: 20px;
+        }
+
+        #results {
+
+
+            width: 100%;
+        }
+
+        .title {
+            margin-top: 30px;
+            display: block;
+            font-size: 2.1em;
+            line-height: 1.1em;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #B6BBC4;
+        }
+
+        #result {
+            color: #FF9800;
+        }
+
+        #genderField div {
+
+            padding: 10px 0;
+
+        }
+        @media screen and (max-width:892px){
+    
+.container .input-field input, #age{
+width: 50px;
+min-width: none;
+
+}
+        }
+@media screen and (max-width:692px){
+    
+    .container .input-field{
+flex-direction: column;
+    align-items: start;
+    }
+    .container .input-field div {
+flex-direction: column;
+display: flex;
+gap:1em
+    }
+        .btn-field{
+
+            display: flex;
+            justify-content: start;
+        }    
+            }

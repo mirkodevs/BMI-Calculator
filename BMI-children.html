@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calcolatrice BMI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+
+        <h1>Body mass index for children and adolescents - BMI (obesity) calculator</h1>
+        <form class="calc">
+            <fieldset id = "genderField">
+                <label>Gender:</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" checked>
+                    <label for="male">male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">female</label>
+
+                </div>
+            </fieldset>
+            <fieldset class="input-field">
+                <div>
+                <label>Height (cm):</label>
+                <input type="number" id="height" min="0">
+            </div>
+            <div>
+                <label>Weight (in kg):</label>
+                <input type="number" id="weight" min="0">
+            </div>
+            <div>
+                <label>Age (years):</label>
+                <select id="age">
+
+
+                </select>
+            </div>
+            </fieldset>
+            <fieldset class="btn-field">
+                <button onclick="calculateBMI(event)" class="calc-btn">Calcola BMI</button>
+                <button onclick="resetBMI(event)" class="reset-btn">Reset</button>
+
+            </fieldset>
+
+        </form>
+        <section id="results">
+
+            <strong class="title">
+                <span>BMI</span>
+                <span id="result"></span>
+                <span class="health-grade"></span>
+            </strong>
+            <div class="bmi-result vue-gauge">
+                <ul>
+
+                </ul>
+
+                <span class="arrow"></span>
+            </div>
+
+        </section>
+    </section>
+
+    <script src="./script.js">
+
+    </script>
+</body>
+
+</html>
