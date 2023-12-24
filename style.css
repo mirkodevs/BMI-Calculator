@@ -260,7 +260,11 @@ min-width: none;
 }
         }
 @media screen and (max-width:692px){
-    
+    .container{
+max-width: 95vw;
+
+
+    }
     .container .input-field{
 flex-direction: column;
     align-items: start;
