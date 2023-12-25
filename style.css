@@ -1,14 +1,15 @@
         /* Stili CSS per la calcolatrice */
         /* ... */
         *,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
         .container {
             font-family: 'Montserrat', sans-serif;
             border: 1px solid #B6BBC4;
-         
+
             max-width: 990px;
             margin: 200px auto;
             padding: 20px 15px;
@@ -38,12 +39,13 @@
             background-color: transparent;
             color: #596FB7;
         }
-.reset-btn:hover{
 
-background-color: #596FB7;
-color: white;
+        .reset-btn:hover {
 
-}
+            background-color: #596FB7;
+            color: white;
+
+        }
 
         .reset-btn,
         .calc-btn {
@@ -70,10 +72,11 @@ color: white;
             padding: 10px;
             border-radius: 6px;
             background-color: transparent;
-         
+
             min-width: 100px;
         }
-        .input-field{
+
+        .input-field {
 
             display: flex;
             justify-content: start;
@@ -81,6 +84,7 @@ color: white;
             gap: 1em;
             flex-wrap: nowrap;
         }
+
         .bmi-result {
 
             display: flex;
@@ -251,32 +255,38 @@ color: white;
             padding: 10px 0;
 
         }
-        @media screen and (max-width:892px){
-    
-.container .input-field input, #age{
-width: 50px;
-min-width: none;
 
-}
-        }
-@media screen and (max-width:692px){
-    .container{
-max-width: 95vw;
+        @media screen and (max-width:892px) {
 
+            .container .input-field input,
+            #age {
+                width: 50px;
+                min-width: none;
 
-    }
-    .container .input-field{
-flex-direction: column;
-    align-items: start;
-    }
-    .container .input-field div {
-flex-direction: column;
-display: flex;
-gap:1em
-    }
-        .btn-field{
-
-            display: flex;
-            justify-content: start;
-        }    
             }
+        }
+
+        @media screen and (max-width:692px) {
+            .container {
+                max-width: 95vw;
+
+
+            }
+
+            .container .input-field {
+                flex-direction: column;
+                align-items: start;
+            }
+
+            .container .input-field div {
+                flex-direction: column;
+                display: flex;
+                gap: 1em
+            }
+
+            .btn-field {
+
+                display: flex;
+                justify-content: start;
+            }
+        }
