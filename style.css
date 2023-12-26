@@ -290,3 +290,7 @@
                 justify-content: start;
             }
         }
+        .orange
+    {
+        color: #FF9800;
+    font-weight: 700;    }

@@ -62,7 +62,25 @@ function calculateBMI(event) {
     "Severe obesity",
     "Extreme obesity",
   ];
+
+  let percentile;
   if (age === 2) {
+    if (bmi <= 14.8) {
+      percentile = 5;
+    } else if (bmi <= 15.8) {
+      percentile = 25;
+    } else if (bmi <= 16.5) {
+      percentile = 50;
+    } else if (bmi <= 17.5) {
+      percentile = 75;
+    } else if (bmi <= 18.1) {
+      percentile = 85;
+    } else if (bmi <= 19.1) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
+
     if (bmi < 15.5) {
       result = "Normal weight";
       if (bmi < 14.5) {
@@ -85,6 +103,24 @@ function calculateBMI(event) {
     }
   }
   if (age === 3) {
+  
+ if (bmi <= 14.1) {
+      percentile = 5;
+    } else if (bmi <= 15.1) {
+      percentile = 25;
+    } else if (bmi <= 15.9) {
+      percentile = 50;
+    } else if (bmi <= 16.7) {
+      percentile = 75;
+    } else if (bmi <= 17.3) {
+      percentile = 85;
+    } else if (bmi <= 18.2) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
+
+
     if (bmi < 15.5) {
       result = "Normal weight";
       if (bmi < 14.4) {
@@ -105,6 +141,23 @@ function calculateBMI(event) {
     }
   }
   if (age === 4) {
+
+    if (bmi <= 14) {
+      percentile = 5;
+    } else if (bmi <= 15) {
+      percentile = 25;
+    } else if (bmi <= 15.5) {
+      percentile = 50;
+    } else if (bmi <= 16.5) {
+      percentile = 75;
+    } else if (bmi <= 17) {
+      percentile = 85;
+    } else if (bmi <= 17.75) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
+
     if (bmi < 15.5) {
       result = "Normal weight";
       if (bmi < 14) {
@@ -128,6 +181,25 @@ function calculateBMI(event) {
     }
   }
   if (age === 5) {
+
+    if (bmi <= 13.8) {
+      percentile = 5;
+    } else if (bmi <= 14.75) {
+      percentile = 25;
+    } else if (bmi <= 15.5) {
+      percentile = 50;
+    } else if (bmi <= 16.25) {
+      percentile = 75;
+    } else if (bmi <= 16.75) {
+      percentile = 85;
+    } else if (bmi <= 17.85) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
+
+
+
     if (bmi < 15.5) {
       result = "Normal weight";
       if (bmi <= 13.9) {
@@ -151,6 +223,24 @@ function calculateBMI(event) {
     }
   }
   if (age === 6) {
+    if (bmi <= 13.6) {
+      percentile = 5;
+    } else if (bmi <= 14.6) {
+      percentile = 25;
+    } else if (bmi <= 15.4) {
+      percentile = 50;
+    } else if (bmi <= 16.4) {
+      percentile = 75;
+    } else if (bmi <= 17) {
+      percentile = 85;
+    } else if (bmi <= 18.4) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
+
+
+
     if (bmi < 15.5) {
       result = "Normal weight";
       if (bmi <= 13.9) {
@@ -174,22 +264,43 @@ function calculateBMI(event) {
     }
   }
   if (age === 7) {
-    if (bmi < 15.5) {
-      result = "Normal weight";
-      if (bmi <= 13.75) {
-        result = "underweight";
-      }
-    } else if (bmi >= 15.5 && bmi < 17.5) {
-      result = "normal weight";
-    } else if (bmi >= 17.5 && bmi < 19.1) {
-      result = "Overweight";
-    } else if (bmi >= 19.1 && bmi < 25.8) {
-      result = "Severe obesity";
+    if (bmi <= 13.6) {
+      percentile = 5;
+    } else if (bmi <= 14.6) {
+      percentile = 25;
+    } else if (bmi <= 15.45) {
+      percentile = 50;
+    } else if (bmi <= 16.5) {
+      percentile = 75;
+    } else if (bmi <= 17.4) {
+      percentile = 85;
+    } else if (bmi <= 19) {
+      percentile = 95;
     } else {
-      result = "Extreme obesity";
+      percentile = 100;
     }
+
+    
   }
   if (age === 8) {
+ 
+      if (bmi <= 13.75) {
+        percentile = 5;
+      } else if (bmi <= 14.75) {
+        percentile = 25;
+      } else if (bmi <= 15.65) {
+        percentile = 50;
+      } else if (bmi <= 16.5) {
+        percentile = 75;
+      } else if (bmi <= 18) {
+        percentile = 85;
+      } else if (bmi <= 20) {
+        percentile = 95;
+      } else {
+        percentile = 100;
+      }
+
+
     if (bmi < 15.5) {
       result = "Normal weight";
       if (bmi <= 13.8) {
@@ -209,6 +320,23 @@ function calculateBMI(event) {
     }
   }
   if (age === 9) {
+
+
+    if (bmi <= 14) {
+      percentile = 5;
+    } else if (bmi <= 15) {
+      percentile = 25;
+    } else if (bmi <= 16.1) {
+      percentile = 50;
+    } else if (bmi <= 17.5) {
+      percentile = 75;
+    } else if (bmi <= 18.5) {
+      percentile = 85;
+    } else if (bmi <= 21) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
     if (bmi < 15.5) {
       result = "Normal weight";
       if (bmi <= 14) {
@@ -231,6 +359,23 @@ function calculateBMI(event) {
     }
   }
   if (age === 10) {
+
+    if (bmi <= 14.2) {
+      percentile = 5;
+    } else if (bmi <= 15.4) {
+      percentile = 25;
+    } else if (bmi <= 16.5) {
+      percentile = 50;
+    } else if (bmi <= 18.25) {
+      percentile = 75;
+    } else if (bmi <= 19.4) {
+      percentile = 85;
+    } else if (bmi <= 22) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
+
     if (bmi < 15.5) {
       result = "Normal weight";
       if (bmi <= 14.5) {
@@ -247,6 +392,23 @@ function calculateBMI(event) {
     }
   }
   if (age === 11) {
+    if (bmi <= 14.5) {
+      percentile = 5;
+    } else if (bmi <= 15.9) {
+      percentile = 25;
+    } else if (bmi <= 17) {
+      percentile = 50;
+    } else if (bmi <= 19) {
+      percentile = 75;
+    } else if (bmi <= 20) {
+      percentile = 85;
+    } else if (bmi <= 23) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
+
+
     if (bmi < 15.5) {
       result = "Normal weight";
       if (bmi <= 14.5) {
@@ -264,6 +426,24 @@ function calculateBMI(event) {
   }
 
   if (age === 12) {
+
+      if (bmi <= 15) {
+        percentile = 5;
+      } else if (bmi <= 16.4) {
+        percentile = 25;
+      } else if (bmi <= 17.75) {
+        percentile = 50;
+      } else if (bmi <= 19.5) {
+        percentile = 75;
+      } else if (bmi <= 21) {
+        percentile = 85;
+      } else if (bmi <= 24.2) {
+        percentile = 95;
+      } else {
+        percentile = 100;
+      }
+
+
     if (bmi < 15.5) {
       result = "Normal weight";
       if (bmi <= 15) {
@@ -280,9 +460,28 @@ function calculateBMI(event) {
     }
   }
   if (age === 13) {
-    if (bmi < 15.5) {
+
+    if (bmi <= 15.5) {
+      percentile = 5;
+    } else if (bmi <= 17) {
+      percentile = 25;
+    } else if (bmi <= 18.5) {
+      percentile = 50;
+    } else if (bmi <= 20.5) {
+      percentile = 75;
+    } else if (bmi <= 21.75) {
+      percentile = 85;
+    } else if (bmi <= 25) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
+
+    
+    if (bmi <= 15.5) {
       result = "underweight";
-    } else if (bmi >= 15.5 && bmi < 22) {
+    
+    }else if (bmi >= 15.5 && bmi < 22) {
       result = "normal weight";
     } else if (bmi >= 22 && bmi < 25) {
       result = "Severe obesity";
@@ -290,7 +489,26 @@ function calculateBMI(event) {
       result = "Extreme obesity";
     }
   }
+
   if (age === 14) {
+
+    if (bmi <= 16) {
+      percentile = 5;
+    } else if (bmi <= 17.5) {
+      percentile = 25;
+    } else if (bmi <= 19) {
+      percentile = 50;
+    } else if (bmi <= 21) {
+      percentile = 75;
+    } else if (bmi <= 22.5) {
+      percentile = 85;
+    } else if (bmi <= 26) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
+
+
     if (bmi < 16) {
       result = "underweight";
     } else if (bmi >= 16 && bmi < 22.5) {
@@ -302,6 +520,39 @@ function calculateBMI(event) {
     }
   }
   if (age === 15) {
+
+    if (bmi <= 16.5) {
+      percentile = 5;
+    } else if (bmi <= 18.25) {
+      percentile = 25;
+    } else if (bmi <= 19.75) {
+      percentile = 50;
+    } else if (bmi <= 22) {
+      percentile = 75;
+    } else if (bmi <= 23.5) {
+      percentile = 85;
+    } else if (bmi <= 26.9) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
+
+      if (bmi <= 15) {
+        percentile = 5;
+      } else if (bmi <= 16.4) {
+        percentile = 25;
+      } else if (bmi <= 17.75) {
+        percentile = 50;
+      } else if (bmi <= 19.5) {
+        percentile = 75;
+      } else if (bmi <= 21) {
+        percentile = 85;
+      } else if (bmi <= 24.2) {
+        percentile = 95;
+      } else {
+        percentile = 100;
+      }
+
     if (bmi < 16.5) {
       result = "underweight";
     } else if (bmi >= 16.5 && bmi < 23.5) {
@@ -313,6 +564,23 @@ function calculateBMI(event) {
     }
   }
   if (age === 16) {
+
+    if (bmi <= 17) {
+      percentile = 5;
+    } else if (bmi <= 18.8) {
+      percentile = 25;
+    } else if (bmi <= 20.5) {
+      percentile = 50;
+    } else if (bmi <= 22.5) {
+      percentile = 75;
+    } else if (bmi <= 24) {
+      percentile = 85;
+    } else if (bmi <= 27.5) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
+
     if (bmi < 17.6) {
       result = "underweight";
     } else if (bmi >= 17.6 && bmi < 25) {
@@ -324,6 +592,23 @@ function calculateBMI(event) {
     }
   }
   if (age === 17) {
+
+    if (bmi <= 17.5) {
+      percentile = 5;
+    } else if (bmi <= 19.5) {
+      percentile = 25;
+    } else if (bmi <= 21.2) {
+      percentile = 50;
+    } else if (bmi <= 23.5) {
+      percentile = 75;
+    } else if (bmi <= 25) {
+      percentile = 85;
+    } else if (bmi <= 28) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
+
     if (bmi < 17.7) {
       result = "underweight";
     } else if (bmi >= 17.7 && bmi < 25) {
@@ -335,6 +620,24 @@ function calculateBMI(event) {
     }
   }
   if (age === 18) {
+
+
+    if (bmi <= 18.25) {
+      percentile = 5;
+    } else if (bmi <= 20) {
+      percentile = 25;
+    } else if (bmi <= 22) {
+      percentile = 50;
+    } else if (bmi <= 24) {
+      percentile = 75;
+    } else if (bmi <= 25.5) {
+      percentile = 85;
+    } else if (bmi <= 28.75) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
+
     if (bmi < 18.25) {
       result = "underweight";
     } else if (bmi >= 18.25 && bmi < 25.5) {
@@ -346,6 +649,22 @@ function calculateBMI(event) {
     }
   }
   if (age === 19) {
+    if (bmi <= 18.5) {
+      percentile = 5;
+    } else if (bmi <= 20.6) {
+      percentile = 25;
+    } else if (bmi <= 22.5) {
+      percentile = 50;
+    } else if (bmi <= 26.5) {
+      percentile = 75;
+    } else if (bmi <= 26.4) {
+      percentile = 85;
+    } else if (bmi <= 29.5) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
+
     if (bmi < 18.5) {
       result = "underweight";
     } else if (bmi >= 18.5 && bmi < 26.5) {
@@ -357,6 +676,22 @@ function calculateBMI(event) {
     }
   }
   if (age === 20) {
+    if (bmi <= 19) {
+      percentile = 5;
+    } else if (bmi <= 21) {
+      percentile = 25;
+    } else if (bmi <= 23) {
+      percentile = 50;
+    } else if (bmi <= 25.5) {
+      percentile = 75;
+    } else if (bmi <= 26.75) {
+      percentile = 85;
+    } else if (bmi <= 30.5) {
+      percentile = 95;
+    } else {
+      percentile = 100;
+    }
+
     if (bmi < 19) {
       result = "underweight";
     } else if (bmi >= 19 && bmi < 27) {
@@ -367,6 +702,8 @@ function calculateBMI(event) {
       result = "Extreme obesity";
     }
   }
+
+document.getElementById("percentile").innerHTML = age + " years Top <span class = 'orange'>" + percentile +  " %</span> (" + result +  ") Top "+ percentile + "% means " + percentile  + "th place based on 100 people of the same age group, with number 1 from smallest to lowest."
 
   if (gender === "male") {
     maleBreakpoint.forEach((oneBreak, idx) => {
@@ -438,7 +775,6 @@ function calculateBMI(event) {
       bmiResultBar.appendChild(newListItem);
     });
   }
-
 
   bmi = weight / (height * height);
 
